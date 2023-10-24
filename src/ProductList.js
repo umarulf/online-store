@@ -18,7 +18,7 @@ function ProductList({ products, onProductSelect }) {
           />
           <h3>{product.name}</h3>
           <p>${product.price}</p>
-          {/* passes product , allowing to show product details. */}
+          {/* button that passes product , allowing to show product details. */}
           <button onClick={() => onProductSelect(product)}>View Details</button>
         </div>
       ))}
