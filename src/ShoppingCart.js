@@ -4,7 +4,7 @@ import React from 'react';
 
 
 // cart prop is an array of items in shopping cart, onRemoveFromCart function called when you clicking "Remove" button for an item.
-function ShoppingCart({ cart, onRemoveFromCart }) {
+const ShoppingCart = ({ cart, onRemoveFromCart }) => {
   return (
     <div className="shopping-cart">
       <h2>Shopping Cart</h2>

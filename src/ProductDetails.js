@@ -2,7 +2,7 @@ import React from 'react';
 
 
 // displays details about a product and allows you to add the product to a cart
-function ProductDetails({ product, onAddToCart }) {
+const ProductDetails = ({ product, onAddToCart }) => {
   return (
     <div className="product-details">
       <h2>Product Details</h2>

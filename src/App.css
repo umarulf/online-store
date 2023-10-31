@@ -7,6 +7,7 @@
     position: absolute;
     top: 90px;
     right: 20px;
+    margin-right: 60px;
   }
 
   .product-details{
@@ -40,3 +41,18 @@
     text-align: center;
     margin-top: 20px;
   }
+
+  .container{
+
+
+    margin: 70px 70px ;
+
+
+  }
+
+ body{
+  font-family:Chakra Petch ;
+  font-size:large;
+  font-weight:bolder
+ 
+ }

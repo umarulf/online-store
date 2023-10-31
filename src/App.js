@@ -37,15 +37,17 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Online Store</h1>
-      {/* passes in the products data and the function to handle product selection */}
-      <ProductList products={products} onProductSelect={handleProductSelect} />
-     {/* if a selectedProduct is set. allows the user to add to cart and view details . */}
-      {selectedProduct && (
-        <ProductDetails product={selectedProduct} onAddToCart={handleAddToCart} />
-      )}
-      {/* displays the contents of the shopping cart and allows the user to remove items */}
-      <ShoppingCart cart={cart} onRemoveFromCart={handleRemoveFromCart} />
+       <div className="container">
+          <h1>Online Store</h1>
+          {/* passes in the products data and the function to handle product selection */}
+          <ProductList products={products} onProductSelect={handleProductSelect} />
+          {/* if a selectedProduct is set. allows the user to add to cart and view details . */}
+          {selectedProduct && (
+          <ProductDetails product={selectedProduct} onAddToCart={handleAddToCart} />
+          )}
+          {/* displays the contents of the shopping cart and allows the user to remove items */}
+          <ShoppingCart cart={cart} onRemoveFromCart={handleRemoveFromCart} />
+      </div>
     </div>
   );
 }
